@@ -1,0 +1,97 @@
+
+:root{
+    --color-green-dark: #425F2F;
+    --color-green-light: #7E9F82;
+    --color-pink-dark:#C69682 ;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+h3, p{
+    margin: 6px, 0;
+}
+
+a{
+    text-decoration: none;
+    color:var(--color-green-dark)
+}
+a:hover:not(#cart){
+    color:var(--color-pink-dark)
+}
+button{
+    background-color: var(--color-pink-dark);
+    color:white;
+    padding: 5px 10px;
+    border: unset;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+header{
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin:0 60px;
+}
+header nav div{
+    display: flex;
+   align-items: center;
+   gap:30px;
+   position: relative;
+}
+#cuenta-carrito{
+    background-color: #C69682;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    position: absolute;
+
+}
+#logo{
+    height: 40px;
+}
+header nav img {
+    height: 20+px;
+}
+#productos-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: auto;
+}
+.tarjeta-producto{
+    max-width: 300px;
+    text-align: center;
+    background-color: var(--color-green-light);
+    padding: 10px;
+}
+.tarjeta-producto:hover{
+    translate: 0 -10px;
+}
+.tarjeta-producto img{
+    width: 100%;
+    
+}
+footer{
+    margin-top: auto;
+    text-align: center;
+}
+
